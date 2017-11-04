@@ -11,8 +11,7 @@ def main():
                         help='Path for annotated video (including its name)')
     args = parser.parse_args()
 
-    #ann = Annotator(args.in_path, args.out_path)
-    ann = Annotator('videos/given/solidWhiteRight.mp4', 'videos/results/2.mp4')
+    ann = Annotator(args.in_path, args.out_path)
     ann.process_video()
 
     return
